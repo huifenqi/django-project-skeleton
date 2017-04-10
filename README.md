@@ -15,44 +15,11 @@
 
 ### Sample structure
 
-boss
-├── README.md
-├── apps
-│   ├── __init__.py
-│   └── finance
-│       ├── __init__.py
-│       ├── admin.py
-│       ├── migrations
-│       │   └── __init__.py
-│       ├── models.py
-│       ├── tests.py
-│       └── views.py
-├── boss
-│   ├── __init__.py
-│   ├── settings
-│   │   ├── __init__.py
-│   │   ├── common.py
-│   │   ├── development.py
-│   │   ├── production.py
-│   │   └── staging.py
-│   ├── urls.py
-│   └── wsgi.py
-├── configs
-│   ├── README.md
-│   └── newrelic.ini
-├── manage.py
-├── media
-├── requirements.txt
-├── scripts
-├── static
-│   ├── css
-│   ├── images
-│   └── js
-└── template
+![][structure]
 
 ## Usage
 
-To use this repository just use the `template` option of [django-admin][1].
+To use this repository just use the `template` option of [django-admin][3].
 
 	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,ini [project_name]
 
@@ -62,9 +29,9 @@ For different environments: `export DJANGO_SETTINGS_MODULE="[project_name].setti
 
 ## Django materials need to read
 
-1. [https://github.com/rosarior/awesome-django][2]
-2. [https://www.fullstackpython.com/django.html][3]
-3. [https://www.quora.com/What-are-some-best-practices-for-Django-development][4]
+1. [https://github.com/rosarior/awesome-django][4]
+2. [https://www.fullstackpython.com/django.html][5]
+3. [https://www.quora.com/What-are-some-best-practices-for-Django-development][6]
 
 {% endcomment %}
 
@@ -87,7 +54,9 @@ Install all dependencies:
 
 `pip install -r requirements.txt`
 
-[1]:	https://docs.djangoproject.com/en/1.8/ref/django-admin/#startproject-projectname-destination
-[2]:	https://github.com/rosarior/awesome-django
-[3]:	https://www.fullstackpython.com/django.html
-[4]:	https://www.quora.com/What-are-some-best-practices-for-Django-development
+[3]:	https://docs.djangoproject.com/en/1.8/ref/django-admin/#startproject-projectname-destination
+[4]:	https://github.com/rosarior/awesome-django
+[5]:	https://www.fullstackpython.com/django.html
+[6]:	https://www.quora.com/What-are-some-best-practices-for-Django-development
+
+[structure]:      media/structure.png
