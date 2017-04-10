@@ -13,13 +13,50 @@
 * media - contains all upload files
 * scripts - contains all scripts which used by support by `runscript` of django-extensions
 
+### Sample structure
+
+boss
+├── README.md
+├── apps
+│   ├── __init__.py
+│   └── finance
+│       ├── __init__.py
+│       ├── admin.py
+│       ├── migrations
+│       │   └── __init__.py
+│       ├── models.py
+│       ├── tests.py
+│       └── views.py
+├── boss
+│   ├── __init__.py
+│   ├── settings
+│   │   ├── __init__.py
+│   │   ├── common.py
+│   │   ├── development.py
+│   │   ├── production.py
+│   │   └── staging.py
+│   ├── urls.py
+│   └── wsgi.py
+├── configs
+│   ├── README.md
+│   └── newrelic.ini
+├── manage.py
+├── media
+├── requirements.txt
+├── scripts
+├── static
+│   ├── css
+│   ├── images
+│   └── js
+└── template
+
 ## Usage
 
 To use this repository just use the `template` option of [django-admin][1].
 
 	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,ini [project_name]
 
-To create new app: `python manage.py startapp [app_name]`
+To create new app: `python manage.py startapp [app_name] apps/[app_name] --settings=[project_name].settings.development`
 
 For different environments: `export DJANGO_SETTINGS_MODULE="[project_name].settings.production"`
 
