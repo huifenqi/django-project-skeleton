@@ -17,7 +17,7 @@
 
 To use this repository just use the `template` option of [django-admin][1].
 
-	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --name new_relic.ini [project_name]
+	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,ini [project_name]
 
 To create new app: `python manage.py startapp [app_name]`
 
