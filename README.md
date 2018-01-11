@@ -33,6 +33,13 @@ For different environments: `export DJANGO_SETTINGS_MODULE="[project_name].setti
 2. [https://www.fullstackpython.com/django.html][5]
 3. [https://www.quora.com/What-are-some-best-practices-for-Django-development][6]
 
+[3]:	https://docs.djangoproject.com/en/1.8/ref/django-admin/#startproject-projectname-destination
+[4]:	https://github.com/rosarior/awesome-django
+[5]:	https://www.fullstackpython.com/django.html
+[6]:	https://www.quora.com/What-are-some-best-practices-for-Django-development
+
+[structure]:      media/structure.png
+
 {% endcomment %}
 
 # {{ project_name }}
@@ -45,18 +52,15 @@ This project has the following basic apps:
 
 ## Installation
 
-To set up a development environment quickly, first install Python 2. It
-comes with virtualenv built-in. So create a virtual env by:
+To set up a development environment quickly, install Python 2.x first. It
+comes with virtualenv built-in. so create a virtual environment with:
 
 `mkvirtualenv {{ project_name }}`
 
-Install all dependencies:
+Install dependencies:
 
 `pip install -r requirements.txt`
 
-[3]:	https://docs.djangoproject.com/en/1.8/ref/django-admin/#startproject-projectname-destination
-[4]:	https://github.com/rosarior/awesome-django
-[5]:	https://www.fullstackpython.com/django.html
-[6]:	https://www.quora.com/What-are-some-best-practices-for-Django-development
+Run server:
 
-[structure]:      media/structure.png
+`python manage.py runserver --settings={{ project_name }}.settings.development`
