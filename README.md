@@ -21,7 +21,7 @@
 
 To use this repository just use the `template` option of [django-admin][3].
 
-	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,ini [project_name]
+	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,tpl [project_name]
 
 To create new app: `python manage.py startapp [app_name] apps/[app_name] --settings=[project_name].settings.development`
 
