@@ -15,6 +15,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+schema_view = get_swagger_view(title='{{ project_name }} API')
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^docs/$', schema_view)
 ]
