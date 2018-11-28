@@ -55,7 +55,9 @@ This project has the following basic apps:
 To set up a development environment quickly, install Python 2.x first. It
 comes with virtualenv built-in. so create a virtual environment with:
 
-`mkvirtualenv {{ project_name }}`
+`virtualenv env`
+
+`source env/bin/active`
 
 Install dependencies:
 
@@ -63,4 +65,4 @@ Install dependencies:
 
 Run server:
 
-`python manage.py runserver --settings={{ project_name }}.settings.development`
+`python manage.py runserver --settings={{ project_name }}.settings.dev`
