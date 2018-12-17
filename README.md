@@ -6,7 +6,7 @@
 
 ## Structure
 
-* apps - contains subfolders with specific functionality;
+* applications - contains subfolders with specific functionality;
 * configs - stores all configuration related scripts (newrelic, gunicorn, nginx, celery, mongdb, redis, etc);
 * static - contains js, css, images, types/fonts
 * templates - all your html files
