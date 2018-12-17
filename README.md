@@ -23,7 +23,7 @@ To use this repository just use the `template` option of [django-admin][3].
 
 	$ django-admin startproject --template=https://github.com/huifenqi/django-project-skeleton/archive/master.zip --extension=md,tpl [project_name]
 
-To create new app: `python manage.py startapp [app_name] apps/[app_name] --settings=[project_name].settings.development`
+To create new app: `python manage.py startapp [app_name] applications/[app_name] --settings=[project_name].settings.development`
 
 For different environments: `export DJANGO_SETTINGS_MODULE="[project_name].settings.production"`
 
@@ -44,7 +44,7 @@ For different environments: `export DJANGO_SETTINGS_MODULE="[project_name].setti
 
 # {{ project_name }}
 
-This project has the following basic apps:
+This project has the following basic applications:
 
 * App1 (short desc)
 * App2 (short desc)
