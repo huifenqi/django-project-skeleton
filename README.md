@@ -57,7 +57,7 @@ comes with virtualenv built-in. so create a virtual environment with:
 
 `virtualenv env`
 
-`source env/bin/active`
+`source env/bin/activate`
 
 Install dependencies:
 
