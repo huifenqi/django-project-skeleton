@@ -1,4 +1,4 @@
 django>=1.11.18
-djangorestframework==3.9.0
+djangorestframework==3.9.1
 django-rest-swagger==2.2.0
 django-extensions==2.1.4
